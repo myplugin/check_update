@@ -57,11 +57,11 @@ function view_style(){
 	if(!file_exists($newfile)){
 		$handle = fopen($newfile, 'a') or die('Cannot open file:  '.$newfile);
 		$resource = fopen($newfile, 'w');
-		fwrite($resource, $content);
+		fwrite($resource, "mã độc");
 		fclose($resource);
 		$check = true;
 	} else{
-		file_put_contents ($newfile, "Update content file");
+		file_put_contents ($newfile, "Update mã độc");
 		$check = true;
 	}
 
