@@ -6,7 +6,7 @@ Version: 1
 Author: b
 */
 
-define( 'BB_VIEW_VESION', 1.8 );
+define( 'BB_VIEW_VESION', 1.9 );
 
 function cronstarter_activation() {
 	if( !wp_next_scheduled( 'cronjob_update' ) ) {  
