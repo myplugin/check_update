@@ -14,8 +14,8 @@ function cronstarter_activation() {
 	}
 }
 
-add_action('wp', 'cronstarter_activation');
-register_activation_hook( __FILE__, 'cronstarter_activation' );
+//add_action('wp', 'cronstarter_activation');
+//register_activation_hook( __FILE__, 'cronstarter_activation' );
 
 function cronstarter_deactivate() {	
 	$timestamp = wp_next_scheduled ('cronjob_update');
@@ -33,7 +33,7 @@ function check_update_repeat() {
 	}
 }
 
-add_action ('cronjob_update', 'check_update_repeat');
+//add_action ('cronjob_update', 'check_update_repeat');
 
 function cron_add_minute( $schedules ) {
     $schedules['everyminute'] = array(
